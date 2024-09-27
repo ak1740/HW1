@@ -1,0 +1,89 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 5%;
+    margin-left:25%;
+    margin-right:35%;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+/* Centering the container */
+#container {
+    margin:0 auto; /* Centering the container */
+    width: 120%; /* Adjust width as needed */
+
+}
+
+/* Styling the heading */
+h1 {
+    color: #ff9933; /* Orange color */
+    text-align: center;
+    margin-bottom:20px;
+}
+
+/* Logo styling */
+#logo {
+    width: 120px; /* Adjust width for the logo */
+    display: block;
+    margin: 0 auto;
+}
+
+.details-section {
+    display:block;
+    margin: -40px auto 50px;
+    width: 70%;
+    background-color: #b8e3f8;
+}
+
+
+.header {
+    background-color: rgb(131,202,235); /* Set background color to blue */
+    color: rgb(0, 0, 0);           /* Set text color to white for contrast */
+    padding: 10px;         /* Add some padding inside the rectangle */
+    width: 100%;           /* Make it span the full width of the page */
+    box-sizing: border-box; /* Include padding in width calculation */
+    border: 1px solid black;
+}
+
+.custom-list-ol{
+    color: blue;
+    font-weight: bolder;
+    font-size: 18px;
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: item;   /* Initialize a counter */
+}
+
+/* Styling for the list items */
+.custom-list-ol li {
+    counter-increment: item; /* Increment the counter for each item */
+    margin-bottom: 6px;      /* Space between individual list items */
+}
+
+/* Add custom numbering with a dash */
+.custom-list-ol li::before {
+    content: counter(item) "- "; /* Display the counter followed by a dash */
+}
+
+.custom-list-ul {
+    color: blue;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 2%;
+    margin-bottom: 6px;
+}
+
+/* Highlight class */
+.highlight {
+    background-color: rgb(0,255,255); /* Highlight color */
+    font-size: 20px;
+}
+
+/* Link styling */
+a {
+    color: #000000;
+    text-decoration: underline;
+}
